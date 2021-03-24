@@ -1,2 +1,2 @@
-# odin_library
-The Odin Project - Library Project
+# odin_calculator
+The Odin Project - Calculator
