@@ -1,0 +1,67 @@
+body {
+  background-color: #fafbfc;
+}
+
+h1 {
+  font: 32px "Nunito ExtraBold", Helvetica, Arial, sans-serif;
+  color: #3b3355;
+  margin: 32px;
+}
+
+.action_button {
+  font: bold 14px Nunito, Helvetica, Arial, san-serif;
+  color: #fafbfc;
+  background-color: #3b3355;
+  border: 0;
+  height: 48px;
+  border-radius: 24px;
+  padding: 0 32px;
+}
+
+.search_bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #d1cce0;
+  border-radius: 24px;
+  height: 48px;
+}
+
+.search_bar > input {
+  height: 32px;
+  margin: 8px 16px 8px 8px;
+  border: 0;
+  background-color: #fafbfc;
+  color: #3b3355;
+  font: 14px Nunito, Helvetica, Arial, san-serif;
+  width: 100%;
+}
+
+.search_bar > .ph-magnifying-glass {
+  margin-left: 8px;
+  color: #3b3355;
+}
+
+.controls {
+  margin: 16px 32px;
+  height: 120px;
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 500px) {
+  .controls {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  .search_bar {
+    margin-left: 16px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+}
