@@ -13,62 +13,35 @@
     <body>
         <header>
             <h1>BookList.</h1>
-            <form class="controls">
-                <input class="action_button" type="button" value="+ Add Book">
+            <div class="controls">
+                <input id="open_pop"class="action_button" type="button" value="+ Add Book">
                 <div class="search_bar">
                     <i class="ph-magnifying-glass"></i>
                     <input type="search" placeholder="Search Books">
                 </div>
-            </form>
-        </header>
-        <main>
-            <div id="book_table">
-                <div class="book_row">
-                    <p><b>Killing Eve - Codename Villanelle</b><br>Luke Jennings</p>
-                    <form>
-                        <label for="read_01">Not Read</label>
-                        <div class="slider">
-                            <input id="read_01" type="checkbox">
-                            <label for="read_01"></label>
-                        </div>
-                        <i class="ph-trash"></i>
-                    </form>
-                </div>
-                <div class="book_row">
-                    <p><b>The Thursday Murder Club</b><br>Richard Osman</p>
-                    <form>
-                        <label for="read_02">Not Read</label>
-                        <div class="slider">
-                            <input id="read_02" type="checkbox">
-                            <label for="read_02"></label>
-                        </div>
-                        <i class="ph-trash"></i>
-                    </form>
-                </div>
-                <div class="book_row">
-                    <p><b>The Comfort Book</b><br>Matt Haig</p>
-                    <form>
-                        <label for="read_03">Not Read</label>
-                        <div class="slider">
-                            <input id="read_03" type="checkbox">
-                            <label for="read_03"></label>
-                        </div>
-                        <i class="ph-trash"></i>
-                    </form>
-                </div>
-                <div class="book_row">
-                    <p><b>Breath</b><br>James Nestor</p>
-                    <form>
-                        <label for="read_04">Not Read</label>
-                        <div class="slider">
-                            <input id="read_04" type="checkbox">
-                            <label for="read_04"></label>
-                        </div>
-                        <i class="ph-trash"></i>
-                    </form>
-                </div>
             </div>
+        </header>
+
+        <main>
+            <div id="book_table"></div>
         </main>
+        <div class="pop">
+            <i class="ph-x-circle"></i>
+            <form>
+                <label>Book Title</label>
+                <input id="new_book_title" type="text">
+                <label>Author</label>
+                <input id="new_book_author" type="text">
+                <div id="pop_toggle">
+                    <p>Read?</p>
+                        <div class="slider">
+                            <input id="new_book_read" type="checkbox">
+                            <label for="new_book_read"></label>
+                        </div>
+                </div>
+                <input id="add_book_button" class="action_button" type="button" value="Add Book">
+            </form>
+        </div>
         <script src="script.js"></script>
     </body>
 
